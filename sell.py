@@ -113,9 +113,9 @@ if __name__ == '__main__':
             start = int(ll[1])
             end = int(ll[2])
             ticket = sell(ticket_dict, start, end)
+            print '#' * 100
+            print line.strip()
             if ticket:
-                print '#' * 100
-                print line.strip()
                 print user, "bought", ticket
 
             print_residual(ticket_dict)
